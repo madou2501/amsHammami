@@ -13,29 +13,29 @@
 <img th:src="@{image/MI.png}" width="18%" />
 <h1 align="center">Ajout d'un nouvel étudiant</h1>
 
-<form method="post">
+<form method="post" th:action="@{/save}">
 <div class="form-group">
-<label for="nom">Nom</label> <input type="text" class="form-control"
+<label for="nom">Nom</label> <input name="Nom" type="text" class="form-control"
 id="nom"  placeholder="Entrer nom">
 </div>
 
 <div class="form-group">
-<label for="age">Age</label> <input type="text" class="form-control"
+<label for="age">Age</label> <input name="age" type="text" class="form-control"
 id="age"  placeholder="Entrer votre age">
 </div>
 
 <div class="form-group">
-<label for="email">Email</label> <input type="email" class="form-control"
+<label for="email">Email</label> <input name="email" type="email" class="form-control"
 id="email"  placeholder="Entrer votre email">
 </div>
 
 <div class="form-group">
-<label for="adresss">Adresse</label> <input type="text" class="form-control"
+<label for="adresss">Adresse</label> <input name="adresse" type="text" class="form-control"
 id="email"  placeholder="Entrer votre adresse">
 </div>
 
 <div class="form-group">
-<label for="tel">Téléphone</label> <input type="text" class="form-control"
+<label for="tel">Téléphone</label> <input  type="text" class="form-control" name="tel"
 id="tel"  placeholder="Entrer votre mobile">
 </div>
 

@@ -45,5 +45,10 @@ public class Etudiant {
 	public void setTel(int tel) {
 		this.tel = tel;
 	}
+	@Override
+	public String toString() {
+		return "Etudiant [nom=" + nom + ", age=" + age + ", email=" + email + ", adresse=" + adresse + ", tel=" + tel
+				+ "]";
+	}
 
 }
